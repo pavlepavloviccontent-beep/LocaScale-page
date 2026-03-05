@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocaScale - Get Pre-Sold High-Ticket Clients | Content Marketing Agency</title>
-    <meta name="description" content="LocaScale helps coaches, consultants & agency owners get 10-30 qualified sales calls per month through done-for-you content systems.">
+    <title>LocaScale - Get Pre-Sold $10K+ Clients Flooding Your DMs</title>
+    <meta name="description" content="For Coaches & Agency Owners: We Build Your Complete Content-to-Client System. Get 5-10 high-ticket clients monthly, fully automated.">
     <style>
         * {
             margin: 0;
@@ -37,29 +37,27 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 900;
             line-height: 1.2;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            color: #ffffff;
+            max-width: 1100px;
+        }
+
+        .hero h1 .highlight {
             background: linear-gradient(135deg, #00ff87 0%, #60efff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            max-width: 1100px;
         }
 
         .hero-subtitle {
-            font-size: 1.3rem;
-            color: #b0b0b0;
-            margin-bottom: 40px;
+            font-size: 1.5rem;
+            color: #d0d0d0;
+            margin-bottom: 50px;
             font-weight: 500;
-        }
-
-        .hero p {
-            font-size: 1.4rem;
-            color: #e0e0e0;
-            max-width: 900px;
-            margin-bottom: 40px;
+            max-width: 1000px;
             line-height: 1.8;
         }
 
@@ -69,48 +67,89 @@
             margin: 40px auto;
             aspect-ratio: 16/9;
             background: #1a1a1a;
-            border: 2px solid #00ff87;
+            border: 3px solid #00ff87;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 255, 135, 0.3);
+            animation: gentleSwing 3s ease-in-out infinite;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        .video-placeholder {
+        .video-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 50px rgba(0, 255, 135, 0.5);
+        }
+
+        @keyframes gentleSwing {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(0.5deg); }
+            75% { transform: rotate(-0.5deg); }
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-cta {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #00ff87;
+        }
+
+        .bonus-box {
+            background: linear-gradient(135deg, #1a1a1a, #252525);
+            border: 2px solid #ff6b00;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .bonus-box h3 {
+            color: #ff6b00;
             font-size: 1.5rem;
-            color: #666;
+            margin-bottom: 15px;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 20px 50px;
-            font-size: 1.3rem;
-            font-weight: 700;
+            padding: 25px 60px;
+            font-size: 1.4rem;
+            font-weight: 800;
             text-transform: uppercase;
-            background: linear-gradient(135deg, #00ff87 0%, #00cc6a 100%);
-            color: #000;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: #fff;
             text-decoration: none;
             border-radius: 50px;
             transition: all 0.3s ease;
-            box-shadow: 0 0 30px rgba(0, 255, 135, 0.4);
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
             animation: pulse 2s infinite;
-            margin-top: 20px;
+            margin: 20px 0;
+            letter-spacing: 1px;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 50px rgba(0, 255, 135, 0.6);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 50px rgba(255, 0, 0, 0.8);
         }
 
         @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 0 30px rgba(0, 255, 135, 0.4);
-            }
-            50% {
-                box-shadow: 0 0 50px rgba(0, 255, 135, 0.7);
-            }
+            0%, 100% { box-shadow: 0 0 30px rgba(255, 0, 0, 0.5); }
+            50% { box-shadow: 0 0 50px rgba(255, 0, 0, 0.8); }
+        }
+
+        .urgency-text {
+            color: #ff6b00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 20px;
         }
 
         .section {
@@ -119,10 +158,21 @@
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
             margin-bottom: 30px;
             text-align: center;
+        }
+
+        .fire-title {
+            color: #ff4444;
+            text-shadow: 0 0 20px rgba(255, 68, 68, 0.6);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(255, 68, 68, 0.6); }
+            50% { text-shadow: 0 0 30px rgba(255, 68, 68, 0.8), 0 0 60px rgba(255, 68, 68, 0.6); }
         }
 
         .section-content {
@@ -133,17 +183,7 @@
             color: #d0d0d0;
         }
 
-        .business-owner-section {
-            background: #0f0f0f;
-        }
-
-        .business-owner-section h2 {
-            font-size: 2.8rem;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .business-owner-section p {
+        .section-content p {
             margin-bottom: 20px;
         }
 
@@ -155,41 +195,7 @@
             border-radius: 8px;
         }
 
-        .mistakes-section {
-            background: #0a0a0a;
-        }
-
-        .mistakes-title {
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #ff4444;
-            text-shadow: 0 0 20px rgba(255, 68, 68, 0.6),
-                         0 0 40px rgba(255, 68, 68, 0.4),
-                         0 0 60px rgba(255, 68, 68, 0.2);
-            animation: glow 2s ease-in-out infinite;
-        }
-
-        @keyframes glow {
-            0%, 100% {
-                text-shadow: 0 0 20px rgba(255, 68, 68, 0.6),
-                             0 0 40px rgba(255, 68, 68, 0.4);
-            }
-            50% {
-                text-shadow: 0 0 30px rgba(255, 68, 68, 0.8),
-                             0 0 60px rgba(255, 68, 68, 0.6),
-                             0 0 90px rgba(255, 68, 68, 0.4);
-            }
-        }
-
-        .mistakes-subtitle {
-            font-size: 1.8rem;
-            margin-bottom: 40px;
-            text-align: center;
-            color: #e0e0e0;
-        }
-
-        .mistake-item {
+        .mistake-item, .benefit-item {
             background: #1a1a1a;
             border: 2px solid #2a2a2a;
             border-radius: 12px;
@@ -205,36 +211,8 @@
 
         .mistake-item h3 {
             color: #ff4444;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .benefits-section {
-            background: #0f0f0f;
-        }
-
-        .benefits-intro {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .benefits-intro p {
-            display: inline;
-            font-size: 1.3rem;
-            color: #d0d0d0;
-            margin: 0 8px;
-        }
-
-        .benefit-item {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
-            border: 2px solid #2a2a2a;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 25px;
-            transition: all 0.3s ease;
         }
 
         .benefit-item:hover {
@@ -247,59 +225,6 @@
             color: #00ff87;
             font-size: 1.4rem;
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .outcome-section {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .outcome-text {
-            font-size: 1.8rem;
-            font-weight: 600;
-            max-width: 900px;
-            margin: 0 auto 50px;
-            line-height: 1.8;
-            color: #e0e0e0;
-        }
-
-        .big-cta-button {
-            display: inline-block;
-            padding: 30px 80px;
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            background: linear-gradient(135deg, #00ff87 0%, #00cc6a 100%);
-            color: #000;
-            text-decoration: none;
-            border-radius: 60px;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 40px rgba(0, 255, 135, 0.5);
-            animation: bigPulse 2s infinite;
-            letter-spacing: 2px;
-        }
-
-        .big-cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 60px rgba(0, 255, 135, 0.8);
-        }
-
-        @keyframes bigPulse {
-            0%, 100% {
-                box-shadow: 0 0 40px rgba(0, 255, 135, 0.5);
-            }
-            50% {
-                box-shadow: 0 0 70px rgba(0, 255, 135, 0.8);
-            }
-        }
-
-        .comparison-section {
-            background: #0a0a0a;
-            padding: 80px 20px;
         }
 
         .comparison-grid {
@@ -307,7 +232,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 50px auto;
         }
 
         .comparison-column {
@@ -323,13 +248,8 @@
             text-align: center;
         }
 
-        .comparison-column.without h3 {
-            color: #ff4444;
-        }
-
-        .comparison-column.with h3 {
-            color: #00ff87;
-        }
+        .comparison-column.bad h3 { color: #ff4444; }
+        .comparison-column.good h3 { color: #00ff87; }
 
         .comparison-item {
             padding: 15px 0;
@@ -339,8 +259,31 @@
             gap: 15px;
         }
 
-        .comparison-item:last-child {
-            border-bottom: none;
+        .comparison-item:last-child { border-bottom: none; }
+
+        .comparison-table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: #00ff87;
+            color: #000;
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid #2a2a2a;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #1a1a1a;
         }
 
         .guarantee-section {
@@ -365,28 +308,9 @@
             color: #00ff87;
         }
 
-        .guarantee-box p {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-
-        .guarantee-details {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            text-align: left;
-        }
-
         .faq-section {
             background: #0f0f0f;
             padding: 80px 20px;
-        }
-
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto;
         }
 
         .faq-item {
@@ -395,11 +319,9 @@
             border-radius: 12px;
             margin-bottom: 20px;
             overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            border-color: #00ff87;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .faq-question {
@@ -427,171 +349,274 @@
 
         .final-cta h2 {
             font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .final-cta p {
-            font-size: 1.5rem;
-            margin-bottom: 50px;
-            color: #d0d0d0;
+            margin-bottom: 30px;
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .comparison-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .big-cta-button {
-                padding: 20px 40px;
-                font-size: 1.2rem;
-            }
+            .hero h1 { font-size: 2rem; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 0.9rem; }
+            .comparison-table th, .comparison-table td { padding: 10px; }
         }
     </style>
 </head>
 <body>
     <section class="hero">
         <div class="container">
-            <h1>Get Pre-Sold $5K-$18K Clients Flooding Your DMs Every Week With This Done-For-You Content System</h1>
-            <p class="hero-subtitle">Coaches, Consultants, & Agency Owners Who Want High-Ticket Clients Organically...</p>
-            <p>We handle everything – scripting, editing, posting, AND the complete conversion system that turns viewers into pre-sold clients. You just film 4 hours/month and close deals.</p>
+            <h1>Get Pre-Sold <span class="highlight">$10K+ Clients</span> Flooding Your DMs Every Week</h1>
+            <p class="hero-subtitle">For Coaches & Agency Owners: We Build Your Complete Content-to-Client System (5-10 High-Ticket Clients Monthly, Fully Automated, You Just Film 4 Hours/Month)</p>
             
             <div class="video-container">
-                <div class="video-placeholder">[ VSL VIDEO PLACEHOLDER - Replace with your video embed ]</div>
+                <iframe 
+                    src="https://www.youtube.com/embed/zzYXIqtIcc8?si=WyCePK8Z_13xHcxp" 
+                    title="LocaScale VSL" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
-            
-            <a href="https://calendly.com/0pavle/discovery-call-1" class="cta-button">Get Started Now</a>
+
+            <p class="video-cta">👇 WATCH THIS 9-MINUTE VIDEO TO SEE HOW IT WORKS 👇</p>
+
+            <div class="bonus-box">
+                <h3>🎁 BONUS:</h3>
+                <p>When you work with us, you get our complete Ads Blueprint that's generated $2M+ in revenue (targeting strategies, creative frameworks, and scaling systems - makes your ads work 10X better)</p>
+            </div>
+
+            <a href="https://calendly.com/0pavle/discovery-call-1" class="cta-button">YES! BUILD MY CLIENT SYSTEM NOW →</a>
+
+            <p class="urgency-text">⚠️ ONLY 12 SPOTS AVAILABLE THIS QUARTER - We physically can't take on more than 12 clients due to the hands-on nature of our service. If you're seeing this page, spots are still open. But they won't last long.</p>
         </div>
     </section>
 
-    <section class="section business-owner-section">
+    <section class="section" style="background: #0f0f0f;">
         <div class="container">
-            <h2>You're a Business Owner, Not a Content Creator</h2>
+            <h2 class="section-title fire-title">🔥 HERE'S WHAT'S HAPPENING RIGHT NOW 🔥</h2>
             <div class="section-content">
-                <p>Let's be real - the problem isn't that you don't believe content can get you high-ticket clients.</p>
-                
-                <p>You already know it's the right vehicle. You see the results. You've watched other coaches and agency owners blow up and book calls left and right.</p>
-                
-                <p>You've probably even tried it yourself.</p>
-                
-                <p>But is it actually working for you like it's working for them?</p>
-                
-                <p>Maybe. Maybe not.</p>
-                
-                <p>Because here's the truth: Most people don't have the proper system to do this consistently. They start running out of ideas, which takes away a lot of their time. They post randomly and hope something sticks.</p>
+                <p>While you're reading this page, there's a coach somewhere closing a $15K client who said these exact words on the sales call:</p>
                 
                 <div class="highlight-box">
-                    <p><strong>What if you could have a complete system for getting high-ticket clients through content?</strong></p>
-                    <p><strong>What if you could have a full content agency working for you full-time, so you just spend 4 hours a month creating content and the rest of your time closing deals?</strong></p>
+                    <p style="font-size: 1.4rem; font-style: italic;">"I've been watching your content for weeks. I already know you're the person I want to work with. How do we get started?"</p>
                 </div>
+
+                <p>No objections. No "let me think about it." No price shopping.</p>
+                <p><strong>Just a pre-sold client ready to buy.</strong></p>
+                <p>This isn't luck. It's a <strong>SYSTEM</strong>.</p>
+                <p>And in the next 9 minutes, I'm going to show you exactly how it works.</p>
             </div>
         </div>
     </section>
 
-    <section class="section mistakes-section">
+    <section class="section">
         <div class="container">
-            <h2 class="mistakes-title">I'M NOT THROWING SHADE AT YOU BUT...</h2>
-            <h3 class="mistakes-subtitle">The way to make YouTube work, isn't to:</h3>
+            <h2 class="section-title">You're a Business Owner, Not a Content Creator</h2>
+            <div class="section-content">
+                <p>Let's be real - the problem isn't that you don't believe content can get you high-ticket clients.</p>
+                <p>You already KNOW it's the right vehicle.</p>
+                <p>You see the results. You've watched other coaches and agency owners blow up on social media and book calls left and right.</p>
+                <p>You've probably even tried it yourself.</p>
+                <p>But here's the question that keeps you up at night:</p>
+                
+                <div class="highlight-box">
+                    <p style="font-size: 1.5rem; font-weight: 700; text-align: center;">"Why isn't it working for ME like it's working for THEM?"</p>
+                </div>
+
+                <p><strong>Here's the brutal truth nobody wants to admit:</strong></p>
+                <p>❌ You're posting randomly and hoping something sticks<br>
+                ❌ You're running out of ideas and it's eating your time<br>
+                ❌ You're getting "engagement" but ZERO actual clients<br>
+                ❌ Your ad costs keep climbing while lead quality tanks<br>
+                ❌ You're spending hours creating content that doesn't convert</p>
+
+                <p style="margin-top: 30px;"><strong>And worst of all?</strong></p>
+                <p style="font-size: 1.3rem; color: #ff4444;"><strong>Your "helpful" content is actually TRAINING your prospects to buy from your competitors.</strong></p>
+
+                <p>Think about it: When you post valuable content without a conversion system, you're making people problem-aware. They realize they have issues they need to fix.</p>
+                <p><strong>But then they go buy from someone who HAS a system in place.</strong></p>
+                <p>You're literally doing the marketing work for your competitors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #0a0a0a;">
+        <div class="container">
+            <h2 class="section-title">The 4 Deadly Mistakes Keeping You Broke</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: #ff4444; margin-bottom: 50px;">(While Your Competitors Get Rich)</p>
             
             <div class="section-content">
                 <div class="mistake-item">
-                    <h3>❌ Hire a random editor and hope for the best</h3>
-                    <p>Content success isn't about flashy cuts and cool transitions. It's about strategy - what to say, how to package it, and how to convert viewers into buyers. Most editors just make things "look nice" but have no idea how to generate revenue.</p>
+                    <h3>❌ MISTAKE #1: Hiring Random Editors and Praying</h3>
+                    <p>You hired an editor off Upwork or Fiverr. They made your videos "look nice" with flashy cuts and trendy transitions.</p>
+                    <p><strong>Result?</strong> Lots of views. Zero revenue.</p>
+                    <p><strong>Why?</strong> Because content success isn't about pretty edits. It's about STRATEGY - what to say, how to package it, and how to convert viewers into buyers. Most editors have no clue how to generate revenue. They just make things look cool.</p>
                 </div>
 
                 <div class="mistake-item">
-                    <h3>❌ Trust that your "value" will be enough to book calls</h3>
-                    <p>Yes, valuable content is important. But without the proper conversion system, automation, and strategic content ecosystem, that "helpful post" you spent hours on will get you nothing but likes from people who will never buy.</p>
+                    <h3>❌ MISTAKE #2: Trusting That "Value" Will Be Enough</h3>
+                    <p>You spent hours creating that "helpful post." You gave away your best frameworks, your secret strategies, your proven processes.</p>
+                    <p><strong>Result?</strong> 500 likes from people who will never spend a dime with you.</p>
+                    <p><strong>Why?</strong> Because without the proper conversion system, automation, and strategic content ecosystem, "value" just means free consulting.</p>
                 </div>
 
                 <div class="mistake-item">
-                    <h3>❌ Study what makes content go viral & try to replicate it</h3>
-                    <p>Understanding how Mr. Beast grew to 400M subscribers isn't going to help your coaching program book more sales calls. You need to understand the fundamentals of content that books calls for YOUR specific offer - not entertainment content.</p>
+                    <h3>❌ MISTAKE #3: Trying to Go Viral Like Mr. Beast</h3>
+                    <p>You studied what makes content go viral. You reverse-engineered Alex Hormozi. You watched every Mr. Beast breakdown.</p>
+                    <p><strong>Result?</strong> You got some viral posts that attracted everyone EXCEPT your ideal clients.</p>
+                    <p><strong>Why?</strong> Because understanding how someone grew a 400M subscriber entertainment channel has NOTHING to do with booking sales calls for YOUR high-ticket offer.</p>
                 </div>
 
                 <div class="mistake-item">
-                    <h3>❌ Try to do everything yourself</h3>
-                    <p>Scripting. Filming. Editing. Thumbnails. SEO. Posting. Automation setup. Lead nurturing. If you're handling it all, no wonder content instantly goes on the back-burner when you sign a new client. Consistency is everything - you can't afford big gaps.</p>
+                    <h3>❌ MISTAKE #4: Doing Everything Yourself</h3>
+                    <p>Scripting. Filming. Editing. Thumbnails. SEO. Posting. Automation. Lead nurturing.</p>
+                    <p><strong>Result?</strong> Content goes on the back-burner the second you sign a new client. Massive gaps in posting. Zero consistency.</p>
+                    <p><strong>Why?</strong> Because you're a business owner, not a content creator. You should be closing deals, not editing videos at 11 PM.</p>
                 </div>
+
+                <p style="margin-top: 40px; text-align: center; font-size: 1.3rem;">Sound familiar?</p>
+                <p style="text-align: center; font-size: 1.3rem;">Here's the good news: <strong>None of this is your fault.</strong></p>
+                <p style="text-align: center; font-size: 1.4rem; color: #00ff87; margin-top: 20px;"><strong>You just didn't have the right SYSTEM.</strong></p>
             </div>
         </div>
     </section>
 
-    <section class="section benefits-section">
+    <section class="section" style="background: #0f0f0f;">
+        <div class="container">
+            <h2 class="section-title">What If You Could Have a Complete "Client-Generating Machine" That Runs on Autopilot?</h2>
+            <div class="section-content">
+                <p style="font-size: 1.3rem; margin-bottom: 30px;"><strong>Imagine waking up to this:</strong></p>
+                <p>📱 5-10 DMs from prospects who've watched your content<br>
+                📅 Your calendar filled with pre-sold leads who already want to buy<br>
+                💰 $50K-$150K in new revenue every month from your content<br>
+                ⏰ While you spend just 4 hours per month creating content</p>
+
+                <p style="margin-top: 40px; font-size: 1.3rem;">This isn't a fantasy. <strong>This is what happens when you have the right SYSTEM.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
         <div class="container">
             <h2 class="section-title">HERE'S HOW WE MAKE YOUR CONTENT PRINT MONEY</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 50px;">Just 1 long-form video per month + 15-20 strategic short-form videos can:</p>
             
-            <div class="benefits-intro">
-                <p>You don't need to become a YouTuber.</p>
-                <p>You don't need a massive audience.</p>
-                <p>You don't need to reinvent your content strategy.</p>
-            </div>
-
             <div class="section-content">
-                <p style="text-align: center; font-size: 1.3rem; margin-bottom: 50px;"><strong>Just one long-form video per month + 15-20 strategic short-form videos with the right system and strategy can...</strong></p>
-
                 <div class="benefit-item">
-                    <h3>✅ Consistently book your best sales calls</h3>
-                    <p>Content is where prospects go when their pain is at its peak. They're not scrolling on the toilet - they're searching. Looking for answers. Ready to pay someone who gets it. When your content shows up in that moment with our conversion system in place, it's a lay-up deal.</p>
+                    <h3>✅ Book 5-10 Qualified High-Ticket Sales Calls Monthly</h3>
+                    <p>Content is where prospects go when their pain is at its peak. They're not scrolling on the toilet - they're SEARCHING. Looking for answers. Ready to pay someone who gets it. When your content shows up with our conversion system in place, it's a lay-up deal.</p>
                 </div>
 
                 <div class="benefit-item">
-                    <h3>✅ Improve results on your ads, emails, and cold outreach instantly</h3>
-                    <p>When you post strategic content, suddenly your ads get higher ROAS. Your cold email replies are warmer. Your lead quality improves across the board, because they've already seen your content beforehand and trust you.</p>
+                    <h3>✅ Make Your Ads Work 10X Better</h3>
+                    <p>When you post strategic content: Your ads get higher ROAS (same spend, better results), your cold emails get warmer replies, your lead quality improves across the board. Why? Because they've already seen your content and trust you before you even reach out.</p>
+                    <p style="margin-top: 15px; color: #ff6b00;"><strong>BONUS: We give you our complete Ads Blueprint that's generated $2M+ in revenue.</strong></p>
                 </div>
 
                 <div class="benefit-item">
-                    <h3>✅ Get current clients to pay MORE for your services</h3>
-                    <p>Clients who consume your content see you as the obvious solution. They understand your value deeper. They're more likely to upgrade, refer others, and stay longer because they're constantly being reminded why they chose you.</p>
+                    <h3>✅ Get Current Clients to Pay MORE</h3>
+                    <p>Clients who consume your content see you as the obvious solution, understand your value deeper, are more likely to upgrade and refer others, and stay longer because they're constantly reminded why they chose you.</p>
                 </div>
 
                 <div class="benefit-item">
-                    <h3>✅ Fewer no-shows, ghosted DMs, and "just curious" leads</h3>
-                    <p>Our content ecosystem filters out the time-wasters. People self-qualify through your strategic content sequence, so by the time they hit "Book a Call," they already know they want in.</p>
+                    <h3>✅ Eliminate No-Shows, Ghosting & "Just Curious" Leads</h3>
+                    <p>Our content ecosystem filters out time-wasters. People self-qualify through your strategic content sequence. By the time they hit "Book a Call," they already know they want in.</p>
                 </div>
 
                 <div class="benefit-item">
-                    <h3>✅ Your closers (or you) turn into cashiers, not salespeople</h3>
-                    <p>When someone watches your long-form content and consumes your short-form ecosystem before the call... they show up ready to buy, not to be sold. You don't need to build rapport or "press their pain" - just send the invoice.</p>
+                    <h3>✅ Turn Your Closers Into Cashiers</h3>
+                    <p>When someone watches your long-form content and consumes your short-form ecosystem before the call... they show up ready to BUY, not to be sold. You don't need to build rapport, "press their pain," handle objections, or follow up 5 times. Just send the invoice.</p>
                 </div>
 
                 <div class="benefit-item">
-                    <h3>✅ Create compounding lead flow (even while you sleep)</h3>
-                    <p>Unlike ads or random short-form posts, our strategic content ecosystem ranks, gets searched, and shows up in feeds months (even years) after it goes live - bringing in leads on autopilot from content you forgot you even posted.</p>
+                    <h3>✅ Create Compounding Lead Flow (While You Sleep)</h3>
+                    <p>Unlike ads or random posts, our strategic content ecosystem ranks in search engines, gets discovered months (even years) later, brings in leads on autopilot, and gets MORE effective over time. You're building an asset, not renting attention.</p>
                 </div>
 
                 <div class="benefit-item">
-                    <h3>✅ You become the obvious choice, even in a crowded market</h3>
-                    <p>When you show up in the right person's feed with the right message, over and over, through our multi-platform content strategy, you instantly become the one they trust. Our system makes that possible, without needing a massive audience.</p>
+                    <h3>✅ Become The Obvious Choice (Even in a Crowded Market)</h3>
+                    <p>When you show up in the right person's feed with the right message, over and over... you instantly become the one they trust. Our multi-platform strategy makes that possible, without needing a massive audience.</p>
                 </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="https://calendly.com/0pavle/discovery-call-1" class="cta-button">YES! I WANT THIS SYSTEM →</a>
             </div>
         </div>
     </section>
 
-    <section class="outcome-section">
+    <section class="section" style="background: #0a0a0a;">
         <div class="container">
-            <p class="outcome-text">Done right, our complete content system can book you 10-30 qualified, inbound sales calls per month, with leads who show up already trusting you and ready to buy.</p>
-            <a href="https://calendly.com/0pavle/discovery-call-1" class="big-cta-button">Get Started Now</a>
+            <h2 class="section-title">Why LocaScale Destroys Every Other "Content Agency"</h2>
+            
+            <table class="comparison-table">
+                <tr>
+                    <th></th>
+                    <th>Other Agencies</th>
+                    <th style="background: #00ff87;">LocaScale</th>
+                </tr>
+                <tr>
+                    <td><strong>Content Creation</strong></td>
+                    <td>Just edit videos</td>
+                    <td>Complete ecosystem design</td>
+                </tr>
+                <tr>
+                    <td><strong>Strategy</strong></td>
+                    <td>Random posting schedule</td>
+                    <td>Strategic content calendar</td>
+                </tr>
+                <tr>
+                    <td><strong>Conversion System</strong></td>
+                    <td>Hope it works</td>
+                    <td>Full automation + lead nurture</td>
+                </tr>
+                <tr>
+                    <td><strong>Scripting</strong></td>
+                    <td>Generic AI scripts</td>
+                    <td>Custom scripts for YOUR offer</td>
+                </tr>
+                <tr>
+                    <td><strong>Results</strong></td>
+                    <td>Pray for views</td>
+                    <td>5-10 clients monthly or refund</td>
+                </tr>
+                <tr>
+                    <td><strong>Training</strong></td>
+                    <td>Figure it out yourself</td>
+                    <td>Complete training + ongoing support</td>
+                </tr>
+                <tr>
+                    <td><strong>Offer Optimization</strong></td>
+                    <td>Never mentioned</td>
+                    <td>Included (worth $5K alone)</td>
+                </tr>
+                <tr>
+                    <td><strong>Multi-Platform</strong></td>
+                    <td>YouTube only</td>
+                    <td>YouTube + IG + TikTok + LinkedIn</td>
+                </tr>
+                <tr>
+                    <td><strong>Automation Setup</strong></td>
+                    <td>Not included</td>
+                    <td>Complete DM + CRM automation</td>
+                </tr>
+                <tr>
+                    <td><strong>Ads Blueprint</strong></td>
+                    <td>Not included</td>
+                    <td>$2M proven blueprint included</td>
+                </tr>
+                <tr>
+                    <td><strong>Time Investment</strong></td>
+                    <td>10-20 hours/month</td>
+                    <td style="color: #00ff87; font-weight: 700;">4 hours/month</td>
+                </tr>
+            </table>
         </div>
     </section>
 
-    <section class="comparison-section">
+    <section class="section" style="background: #0f0f0f;">
         <div class="container">
-            <h2 class="section-title">LEADS THAT WATCH YOUR CONTENT BEFORE SALES CALLS SIMPLY SHOW UP & CLOSE WAY EASIER</h2>
+            <h2 class="section-title">The Difference Is BRUTAL</h2>
             
             <div class="comparison-grid">
-                <div class="comparison-column without">
+                <div class="comparison-column bad">
                     <h3>Leads That DON'T Watch Your Content:</h3>
                     <div class="comparison-item">
                         <span>❌</span>
@@ -599,7 +624,7 @@
                     </div>
                     <div class="comparison-item">
                         <span>❌</span>
-                        <p>Are cruel, guarded, and cold</p>
+                        <p>Are cold, guarded, and skeptical</p>
                     </div>
                     <div class="comparison-item">
                         <span>❌</span>
@@ -613,9 +638,13 @@
                         <span>❌</span>
                         <p>Ghost after the call</p>
                     </div>
+                    <div class="comparison-item">
+                        <span>❌</span>
+                        <p>Price shop with your competitors</p>
+                    </div>
                 </div>
 
-                <div class="comparison-column with">
+                <div class="comparison-column good">
                     <h3>Leads That Watch Your Content:</h3>
                     <div class="comparison-item">
                         <span>✅</span>
@@ -631,66 +660,11 @@
                     </div>
                     <div class="comparison-item">
                         <span>✅</span>
-                        <p>Show up to sales calls informed, not asking surface-level questions</p>
+                        <p>Show up to sales calls informed, not asking basic questions</p>
                     </div>
                     <div class="comparison-item">
                         <span>✅</span>
                         <p>Come in warm, educated, and ready to buy</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="guarantee-section">
-        <div class="container">
-            <div class="guarantee-box">
-                <h2>We're So Confident This System Works, We'll Put OUR Money Where Our Mouth Is</h2>
-                <p>Here's the deal:</p>
-                <p><strong>If you don't DOUBLE your investment with us in the first 90 days, we'll give you a full refund AND you keep everything we built for you.</strong></p>
-                
-                <div class="guarantee-details">
-                    <p>Let me be crystal clear about what this means:</p>
-                    <ul style="margin: 20px 0; padding-left: 30px;">
-                        <li>If you invest $6,000 with us, and you don't generate at least $12,000 in new revenue within 90 days...</li>
-                        <li>If you invest $15,000 with us, and you don't generate at least $30,000 in new revenue within 90 days...</li>
-                    </ul>
-                    <p><strong>You get 100% of your money back. No questions asked.</strong></p>
-                    
-                    <p style="margin-top: 30px;"><strong>PLUS, you keep:</strong></p>
-                    <ul style="margin: 20px 0; padding-left: 30px;">
-                        <li>The entire content system we built</li>
-                        <li>All the automation we set up</li>
-                        <li>Every script, video, and piece of content we created</li>
-                        <li>The complete training and strategy</li>
-                        <li>Everything. Forever.</li>
-                    </ul>
-                </div>
-
-                <p><strong>Why can we make this guarantee?</strong></p>
-                <p>Because we've done this dozens of times. We know the system works. Our average client stays with us for 1.4 years because they're making money.</p>
-                
-                <p style="margin-top: 30px;"><strong>But here's the catch (and it's fair):</strong></p>
-                <p>This guarantee only applies if you hold up your end:</p>
-                <ul style="margin: 20px 0; padding-left: 30px; text-align: left;">
-                    <li>✅ You film consistently (4 hours/month)</li>
-                    <li>✅ You follow our strategy and guidance</li>
-                    <li>✅ You show up to our team calls</li>
-                    <li>✅ You implement what we teach you</li>
-                </ul>
-
-                <p style="font-size: 1.5rem; margin-top: 40px;"><strong>If you do those things and don't double your investment in 90 days, you get everything back PLUS you keep the entire system.</strong></p>
-                <p style="margin-top: 20px;">That's how confident we are that this works.</p>
-                <p><strong>You literally cannot lose.</strong> Either you 2x your money, or you get a full refund AND a complete content system we spend $10,000+ building and over 3 years.</p>
-                
-                <a href="https://calendly.com/0pavle/discovery-call-1" class="cta-button" style="margin-top: 40px;">Get Started Now</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
-            
-            <div class="faq-container">
-                <div class="faq-item">
+                    <div class="comparison-item">
+                        <span>✅</span>
